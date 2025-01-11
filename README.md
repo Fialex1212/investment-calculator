@@ -1,37 +1,49 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Deposit Calculator Dashboard
 
-## Getting Started
+## Описание
 
-First, run the development server:
+Этот инструмент позволяет рассчитать, как будет расти ваш депозит с течением времени, учитывая процентную ставку и тип взноса. Вы можете выбрать тип взноса (одноразовый или ежемесячный), ввести сумму депозита, период инвестирования и процентную ставку. Результаты отображаются на графике, который помогает визуализировать рост вашего депозита.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Функции
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- **Ввод начальной суммы депозита**: Введите начальную сумму, которую вы хотите инвестировать.
+- **Выбор периода**: Выберите период в годах для вашего инвестирования (от 1 до 5 лет).
+- **Тип взноса**:
+  - Одноразовый взнос: Внесите всю сумму сразу, и она будет расти с учетом ежемесячных начислений процентов.
+  - Ежемесячный взнос: Внесите определенную сумму каждый месяц, с начислением процентов на общую сумму.
+- **Ввод процентной ставки**: Укажите процентную ставку в годовых (например, 5.5%).
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+Результат расчета будет отображен в виде графика, который показывает рост вашего депозита на протяжении всего выбранного периода.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Как использовать
 
-## Learn More
+1. **Сумма депозита**: Введите сумму, которую вы хотите инвестировать.
+2. **Период**: Выберите количество лет, на которое вы хотите инвестировать (от 1 до 5 лет).
+3. **Тип взноса**:
+   - Выберите "Одноразовый взнос", если хотите инвестировать всю сумму сразу.
+   - Выберите "Ежемесячный взнос", если хотите вносить деньги каждый месяц.
+4. **Процентная ставка**: Введите процентную ставку в годовых (например, 5.5%).
+5. График автоматически обновится, показывая, как будет расти ваш депозит.
 
-To learn more about Next.js, take a look at the following resources:
+## Пример
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Предположим, вы хотите инвестировать 10,000 рублей на 3 года с процентной ставкой 5% годовых. Вы можете выбрать одноразовый взнос или ежемесячный взнос. После ввода данных, график покажет, как ваш депозит будет увеличиваться с течением времени.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Технологии
 
-## Deploy on Vercel
+- **React**: Для создания интерактивного интерфейса.
+- **Chart.js**: Для отображения графика роста депозита.
+- **React-Chartjs-2**: Для интеграции Chart.js с React.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Установка
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
-"# investment-calculator" 
+1. Клонируйте репозиторий:
+   ```bash
+   git clone https://github.com/ваш-репозиторий
+   npm install
+   npm start
+   ```
+
+
+Теперь вы можете использовать калькулятор для расчета роста депозита!
+
